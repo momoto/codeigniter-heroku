@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= '';
+$config['base_url']	= sprintf('%s://%s', ['HTTP_X_FORWARDED_PROTO'], $_SERVER['HTTP_HOST']);
 
 /*
 |--------------------------------------------------------------------------
